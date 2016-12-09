@@ -59,7 +59,7 @@ class ClientsConfigDelegatorFactoryTest extends PHPUnit_Framework_TestCase
         ]);
 
         $eventManagerMock = $this->getMockForAbstractClass('Zend\EventManager\EventManagerInterface');
-        $moduleEventMock = $this->createMock(ModuleEvent::class);
+        $moduleEventMock = $this->getMockBuilder(ModuleEvent::class)->getMock();
         
         $moduleManagerBuilder = $this->getMockBuilder(ModuleManager::class);
         $moduleManagerBuilder->disableOriginalConstructor();

@@ -13,6 +13,7 @@
     "homepage": "https://polderknowledge.com",
     "require": {
         "php": "^5.5|^7.0",
+        "phpunit/phpunit": "^4.8",
         "zendframework/zend-console": "^2.3",
         "zendframework/zend-eventmanager": "^2.3|^3.0",
         "zendframework/zend-modulemanager": "^2.3"

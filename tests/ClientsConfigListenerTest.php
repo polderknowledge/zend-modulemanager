@@ -42,12 +42,17 @@ class ClientsConfigListenerTest extends PHPUnit_Framework_TestCase
 
         $this->clientConfigListener = new ClientsConfigListener($this->stream->url());
 
-        $configListener = $this->createMock(ConfigListener::class, ['addConfigStaticPath'], [], '', true);
+        $configListenerBuilder = $this->getMockBuilder(ConfigListener::class);
+        $configListenerBuilder->setMethods(['addConfigStaticPath']);
+        $configListener = $configListenerBuilder->getMock();
 
         $moduleManager = $this->getMockForAbstractClass(ModuleManagerInterface::class, ['getModules', 'setModules']);
         $moduleManager->expects($this->any())->method('getModules')->willReturn([]);
 
-        $this->moduleEvent = $this->createMock(ModuleEvent::class, ['getParam', 'getConfigListener', 'getTarget']);
+        $moduleEventBuilder = $this->getMockBuilder(ModuleEvent::class);
+        $moduleEventBuilder->setMethods(['getParam', 'getConfigListener', 'getTarget']);
+
+        $this->moduleEvent = $moduleEventBuilder->getMock();
         $this->moduleEvent->expects($this->any())->method('getParam')->with('client')->willReturn('localhost');
         $this->moduleEvent->expects($this->any())->method('getConfigListener')->willReturn($configListener);
         $this->moduleEvent->expects($this->any())->method('getTarget')->willReturn($moduleManager);
@@ -95,7 +100,7 @@ class ClientsConfigListenerTest extends PHPUnit_Framework_TestCase
     public function testEventManagerIsAttached()
     {
         // Arrange
-        $eventManager = $this->createMock(EventManager::class);
+        $eventManager = $this->getMockBuilder(EventManager::class)->getMock();
         $eventManager->expects($this->once())->method('attach');
 
         // Act
@@ -116,10 +121,10 @@ class ClientsConfigListenerTest extends PHPUnit_Framework_TestCase
     public function testOnModulesLoadThrowExecptionIfClientDomainParamIsMissing()
     {
         // Arrange
-        // ...
+        $moduleEvent = $this->getMockBuilder(ModuleEvent::class)->getMock();
 
         // Act
-        $this->clientConfigListener->onLoadModules($this->createMock(ModuleEvent::class));
+        $this->clientConfigListener->onLoadModules($moduleEvent);
 
         // Assert
     }
