@@ -10,14 +10,14 @@
 namespace PolderKnowledge\ModuleManagerTest;
 
 use org\bovigo\vfs\vfsStream;
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 use PolderKnowledge\ModuleManager\ClientsConfigDelegatorFactory;
 use Zend\Console\Console;
 use Zend\ModuleManager\ModuleEvent;
 use Zend\ModuleManager\ModuleManager;
 use Zend\ServiceManager\ServiceManager;
 
-class ClientsConfigDelegatorFactoryTest extends TestCase
+class ClientsConfigDelegatorFactoryTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @var ClientsConfigDelegatorFactory

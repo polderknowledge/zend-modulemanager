@@ -10,14 +10,14 @@
 namespace PolderKnowledge\ModuleManagerTest;
 
 use org\bovigo\vfs\vfsStream;
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 use PolderKnowledge\ModuleManager\ClientsConfigListener;
 use Zend\EventManager\EventManager;
 use Zend\ModuleManager\Listener\ConfigListener;
 use Zend\ModuleManager\ModuleEvent;
 use Zend\ModuleManager\ModuleManagerInterface;
 
-class ClientsConfigListenerTest extends TestCase
+class ClientsConfigListenerTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @var vfsStream
