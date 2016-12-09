@@ -22,7 +22,7 @@ env:
   global:
     - SITE_URL: https://polderknowledge.github.io/modulemanager
     - GH_USER_NAME: "Polder Knowledge"
-    - GH_USER_EMAIL: jaap@polderknowledge.nl
+    - GH_USER_EMAIL: opensource@polderknowledge.nl
     - GH_REF: github.com/polderknowledge/modulemanager.git
 
 matrix:
@@ -42,7 +42,7 @@ before_script:
 
 script:
   - vendor/bin/phpcs --standard=psr2 src/
-  - vendor/bin/phpunit
+  - phpunit
   - if [[ $DEPLOY_DOCS == "true" && "$TRAVIS_TEST_RESULT" == "0" ]]; then wget -O theme-installer.sh "https://raw.githubusercontent.com/polderknowledge/mkdocs-theme/master/theme-installer.sh" ; chmod 755 theme-installer.sh ; ./theme-installer.sh ; fi
 
 after_script:
