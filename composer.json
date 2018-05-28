@@ -1,5 +1,5 @@
 {
-    "name": "polderknowledge/modulemanager",
+    "name": "polderknowledge/zend-modulemanager",
     "type": "library",
     "description": "A module manager for Zend Framework which can be used to create configs per domain.",
     "keywords": [
@@ -12,17 +12,16 @@
     "license": "MIT",
     "homepage": "https://polderknowledge.com",
     "require": {
-        "php": "^5.5|^7.0",
-        "phpunit/phpunit": "^4.8",
-        "zendframework/zend-console": "^2.3",
-        "zendframework/zend-eventmanager": "^2.3|^3.0",
-        "zendframework/zend-modulemanager": "^2.3"
+        "php": "^7.0",
+        "zendframework/zend-console": "^2.7",
+        "zendframework/zend-eventmanager": "^3.2",
+        "zendframework/zend-modulemanager": "^2.8"
     },
     "require-dev": {
         "mikey179/vfsStream": "^1.6",
-        "polderknowledge/build-tools": "^2.0",
-        "zendframework/zend-http": "^2.5",
-        "zendframework/zend-servicemanager": "^2.3|^3.1"
+        "polderknowledge/build-tools": "^2.1",
+        "zendframework/zend-http": "^2.8",
+        "zendframework/zend-servicemanager": "^3.3"
     },
     "autoload": {
         "psr-4": {
@@ -32,16 +31,6 @@
     "autoload-dev": {
         "psr-4": {
             "PolderKnowledge\\ModuleManagerTest\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "phpunit",
-        "check-style": "phpcs -p --standard=ruleset.xml --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
-        "fix-style": "phpcbf -p --standard=ruleset.xml --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
         }
     },
     "config": {
