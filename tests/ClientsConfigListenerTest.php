@@ -2,9 +2,9 @@
 /**
  * Polder Knowledge / ModuleManager (https://polderknowledge.com)
  *
- * @link https://github.com/polderknowledge/modulemanager for the canonical source repository
+ * @link https://github.com/polderknowledge/zend-modulemanager for the canonical source repository
  * @copyright Copyright (c) 2016 Polder Knowledge (https://polderknowledge.com)
- * @license https://github.com/polderknowledge/modulemanager/blob/master/LICENSE.md MIT
+ * @license https://github.com/polderknowledge/zend-modulemanager/blob/master/LICENSE.md MIT
  */
 
 namespace PolderKnowledge\ModuleManagerTest;

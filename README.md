@@ -1,4 +1,4 @@
-# modulemanager
+# zend-modulemanager
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -14,7 +14,7 @@ A module manager for Zend Framework which can be used to create configs per doma
 Via Composer
 
 ``` bash
-$ composer require polderknowledge/modulemanager
+$ composer require polderknowledge/zend-modulemanager
 ```
 
 ## Usage
@@ -23,13 +23,11 @@ Please read the documentation for this package for a quick setup.
 
 ## Change log
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+The change log is updated in the releases section of Github.
 
 ## Testing
 
-``` bash
-$ composer test
-```
+Run PHPUnit to test this library.
 
 ## Contributing
 
@@ -55,18 +53,18 @@ channel #polderknowledge.
 
 Please see [LICENSE.md][link-license] for the license of this application.
 
-[ico-version]: https://img.shields.io/packagist/v/polderknowledge/modulemanager.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/polderknowledge/zend-modulemanager.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/polderknowledge/modulemanager/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/polderknowledge/modulemanager.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/polderknowledge/modulemanager.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/polderknowledge/modulemanager.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/polderknowledge/zend-modulemanager/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/polderknowledge/zend-modulemanager.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/polderknowledge/zend-modulemanager.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/polderknowledge/zend-modulemanager.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/polderknowledge/modulemanager
-[link-travis]: https://travis-ci.org/polderknowledge/modulemanager
-[link-scrutinizer]: https://scrutinizer-ci.com/g/polderknowledge/modulemanager/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/polderknowledge/modulemanager
-[link-downloads]: https://packagist.org/packages/polderknowledge/modulemanager
+[link-packagist]: https://packagist.org/packages/polderknowledge/zend-modulemanager
+[link-travis]: https://travis-ci.org/polderknowledge/zend-modulemanager
+[link-scrutinizer]: https://scrutinizer-ci.com/g/polderknowledge/zend-modulemanager/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/polderknowledge/zend-modulemanager
+[link-downloads]: https://packagist.org/packages/polderknowledge/zend-modulemanager
 [link-author]: https://polderknowledge.com
 [link-contributors]: ../../contributors
 [link-license]: LICENSE.md

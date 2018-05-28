@@ -23,7 +23,7 @@ env:
     - SITE_URL: https://polderknowledge.github.io/modulemanager
     - GH_USER_NAME: "Polder Knowledge"
     - GH_USER_EMAIL: opensource@polderknowledge.nl
-    - GH_REF: github.com/polderknowledge/modulemanager.git
+    - GH_REF: github.com/polderknowledge/zend-modulemanager.git
 
 matrix:
   allow_failures:

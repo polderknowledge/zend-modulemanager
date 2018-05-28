@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="polderknowledge/modulemanager">
-    <description>The coding standards of polderknowledge/modulemanager</description>
+<ruleset name="polderknowledge/zend-modulemanager">
+    <description>The coding standards of polderknowledge/zend-modulemanager</description>
 
     <rule ref="vendor/polderknowledge/coding-standards/PolderKnowledge/ruleset.xml">
     </rule>
